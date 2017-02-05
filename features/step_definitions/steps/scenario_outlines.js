@@ -1,5 +1,6 @@
+const { client } = require('nightwatch-cucumber')
 
-function scenario_outlines(client, Given, Then, When) {
+function scenario_outlines({ Given, Then, When }) {
   Given(/^I open Google`s page$/, () => {
     return client
         .url('http://google.com')

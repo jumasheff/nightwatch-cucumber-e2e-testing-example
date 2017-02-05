@@ -1,5 +1,6 @@
+const { client } = require('nightwatch-cucumber')
 
-function google_steps(client, Given, Then, When) {
+function google_steps({ Given, Then, When }) {
   Given(/^I open Google`s search page$/, () => {
     return client
         .url('http://google.com')

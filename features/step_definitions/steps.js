@@ -1,11 +1,11 @@
-const {client} = require('nightwatch-cucumber')
-const {defineSupportCode} = require('cucumber')
-const google_steps = require('./google_steps')
-const yandex_steps = require('./yandex_steps')
-const scenario_outlines = require('./scenario_outlines')
+const { defineSupportCode } = require('cucumber')
 
-defineSupportCode(({Given, Then, When}) => {
-  google_steps(client, Given, Then, When)
-  yandex_steps(client, Given, Then, When)
-  scenario_outlines(client, Given, Then, When)
+const google_steps = require('./steps/google_steps')
+const yandex_steps = require('./steps/yandex_steps')
+const scenario_outlines = require('./steps/scenario_outlines')
+
+defineSupportCode((gherkinObj) => {
+  google_steps(gherkinObj)
+  yandex_steps(gherkinObj)
+  scenario_outlines(gherkinObj)
 })
