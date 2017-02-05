@@ -1,0 +1,19 @@
+{
+  "name": "nightwatch-cucumber-e2e-testing-example",
+  "version": "0.0.1",
+  "description": "Demo project demonstrating possibilities of Nightwatch, Cucumber and Gherkin",
+  "main": "nightwatch.conf.js",
+  "scripts": {
+    "test": "./node_modules/.bin/nightwatch --env chrome"
+  },
+  "author": "Murat Jumashev",
+  "license": "MIT",
+  "devDependencies": {
+    "chromedriver": "^2.27.2",
+    "cucumber": "^2.0.0-rc.7",
+    "nightwatch": "^0.9.12",
+    "nightwatch-cucumber": "^7.0.7",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-server": "^3.0.1"
+  }
+}
