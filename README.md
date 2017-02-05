@@ -10,4 +10,4 @@ Example project demonstrating possibilities of Nightwatch.js, Cucumber and Gherk
 ```npm test```
 
 # Run using Phantom.js
-```./node_modules/.bin/nightwatch```
+`./node_modules/.bin/nightwatch`
